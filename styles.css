@@ -1,0 +1,99 @@
+body { 
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000; /* Dark background for contrast */
+  color: #fff; /* White text color */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Fun and casual font */
+  height: 100vh;
+  text-align: center;
+}
+
+.initial-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.initial-text {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.heart-image {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#show-content-button {
+  font-size: 1.2em;
+  padding: 10px 15px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#show-content-button:hover {
+  background-color: #c00;
+}
+
+.hidden-content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+}
+
+.heart-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.side-text {
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+.heartbeat {
+  animation: heartbeat 2s infinite; /* Slower animation speed */
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#alx {
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+}
